@@ -6,7 +6,7 @@ while [ $hr -le 12 ]; do
     min=1
     while [ $min -le 59 ]; do
 	echo $min
-	min= $((min+1))
+	min=$((min+1))
     done
     hr=$((hr+1))
 done
