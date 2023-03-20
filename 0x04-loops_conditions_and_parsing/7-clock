@@ -8,6 +8,6 @@ while [ $hr -le 12 ]; do
 	echo $min
 	let min=min+1
     done
-    let hr=hr+1
+    hr=`exp hr+1`
 done
 
