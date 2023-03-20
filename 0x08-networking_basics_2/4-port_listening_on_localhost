@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#Script to listen localhost port
-sudo nc -l 98
