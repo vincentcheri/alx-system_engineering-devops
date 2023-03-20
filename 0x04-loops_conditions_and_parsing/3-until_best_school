@@ -2,7 +2,7 @@
 # script that displays "Holberton School" 10 times using until loop
 count=1
 until [ $count -gt 10 ]; do
-      echo "Holberton School"
-      let count=count+1
+      echo "Best School"
+      count=$((count+1))
 done
 
