@@ -4,7 +4,7 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 ERR="404.html"
 sudo echo "Ceci n'est pas une page" > $ERR
-sudo mv $ERR /usr/share/nginx/html/
+sudo mv $ERR /var/www/html/
 sudo sed -i "s/#error_page/error_page/" /etc/nginx/sites-available/default
 sudo service nginx restart
 sudo service nginx reload
