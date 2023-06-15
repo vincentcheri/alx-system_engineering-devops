@@ -1,30 +1,24 @@
-# Script that installs and configures Nginx
-exec {'update':
-  provider => shell,
-  path     => '/usr/bin:/usr/sbin:/bin',
-  command  => 'sudo apt-get -y update',
+# Script to install nginx using puppet
+
+package {'nginx':
+  ensure => 'present',
 }
 
 exec {'install':
+  command  => 'sudo apt-get update ; sudo apt-get -y install nginx',
   provider => shell,
-  path     => '/usr/bin:/usr/sbin:/bin',
-  command  => 'sudo apt-get -y install nginx',
 }
 
-exec {'echo_html':
+exec {'Hello World!':
+  command  => 'echo "Hello World!" | sudo dd status=none of=/var/www/html/index.html',
   provider => shell,
-  path     => '/usr/bin:/usr/sbin:/bin',
-  command  => 'sudo echo "Hello World!" | sudo tee /var/www/html/index.html',
 }
 
-exec {'sed_config':
-  command  => 'sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.youtube.com permanent;" /etc/nginx/sites-available/default',
+exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/www.youtube.com\/;\\n\\t}/" /etc/nginx/sites-available/default':
   provider => shell,
-  path     => '/usr/bin:/usr/sbin:/bin',
 }
 
-exec {'start':
-  command  => 'sudo service nginx start',
+exec {'run':
+  command  => 'sudo service nginx restart',
   provider => shell,
-  path     => '/usr/bin:/usr/sbin:/bin',
 }
