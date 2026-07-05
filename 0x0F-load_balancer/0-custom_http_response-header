@@ -35,4 +35,4 @@ printf %s "server {
     }
 }" > /etc/nginx/sites-available/default
 
-service nginx restart
+systemctl restart nginx
