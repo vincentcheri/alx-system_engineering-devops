@@ -1,4 +1,4 @@
-PUPPET is a configuration management tool. Puppet code in a file is called a manifest usually has a file extension of .pp.
+PUPPET is a configuration management tool. Puppet code in a file is called a manifest. It usually has a file extension of .pp.
 It has the resource part, resource title part, attributes part and value part. Very good tool for
 automation.
 
