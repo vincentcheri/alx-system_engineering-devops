@@ -25,3 +25,5 @@
 
 ## 7-puppet_install_nginx_web_server.pp
 - Puppet file to install Nginx and do some basic config
+- Order is, Resource type {'resource title': attribute=> 'value',}
+- Where tittle is not present a command in '' is being run
