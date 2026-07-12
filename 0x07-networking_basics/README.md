@@ -1,1 +1,2 @@
-0x07-networking_basics
+## OSI(Open Systems Interconnection)
+				The model describes communications from the physical implementation of transmitting bits across a transmission medium to the highest-level representation of data of a distributed application. Each layer has well-defined functions and semantics and serves a class of functionality to the layer above it and is served by the layer below it. Established, well-known communication protocols are decomposed in software development into the model's hierarchy of function calls.
