@@ -1,3 +1,22 @@
+## 📁 Project Files
+
+| File | Description |
+|------|-------------|
+| `0-what-is-my-pid` | Displays the PID of the current shell |
+| `1-list_your_processes` | Lists all running processes with `ps aux` |
+| `2-show_your_bash_pid` | Shows the PID of all bash processes using `pgrep` |
+| `3-show_your_bash_pid_made_easy` | Simpler way to find bash PIDs |
+| `4-to_infinity_and_beyond` | Runs an infinite loop with `sleep 2` |
+| `5-dont_stop_me_now` | Traps SIGTERM and prints "I am invincible" |
+| `5-kill_menow` | Sends SIGTERM to a process |
+| `6-stop_me_if_you_can` | Traps SIGINT and SIGTERM gracefully |
+| `67-kill_me_now_made_easy` | Easier version of killing processes |
+| `7-highlander` | Traps signals and handles cleanup |
+| `8-beheaded_process` | Kills a process using `kill -9` |
+| `100-process_and_pid_file` | Creates and manages a PID file |
+| `101-manage_my_process` | Manages a process with start/stop/restart |
+| `102-zombie.c` | C program that creates a zombie process |
+
 
 ##  Process Handling – Quick Reference
 
