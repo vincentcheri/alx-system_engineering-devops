@@ -29,7 +29,7 @@ $?   # Exit code of the last command
 
 ### Notes:
 - `SIGTERM` (15): polite termination, can be trapped
-- `SIGINT` (2): interrupt, usually from keyboard
+- `SIGINT` (2): interrupt, usually from keyboard (Ctrl+c or Ctrl+/)
 - `SIGKILL` (9): instant kill, bypasses traps
 
 **Process handling is essential for scripting, debugging, and server management.**
